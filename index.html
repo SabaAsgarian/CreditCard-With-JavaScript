@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credit Card With JavaScript</title>
+    <link rel="stylesheet" href="css/fontello.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/javascript.css">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+    <link rel="stylesheet" href="css/output.css">
+</head>
+<body>
+    <section class="w-full h-[300%] :*mx-auto mx-auto bg2 *:font-ss ">
+        <div class="row flex justify-center items-center ">
+            <div class="all w-[95%] md:w-[80%] lg:w-[50%] xl:w-[45%] h-[700px] bg-white rounded-xl my-[40%] lg:my-[20%] *:justify-center *:items-center flex flex-wrap justify-center items-center shadow-lg shadow-blue-500 ">
+                <div class="card w-[75%] h-[35%] md:w-[65%] lg:w-[70%] xl:w-[70%] 2xl:w-[65%] md:h-[40%] lg:h-[35%] xl:h-[40%]  bg-card translate-y-[-55%]  rounded-xl shadow-cyan-900 shadow-2xl ">
+                  <div class="h-[20%] w-full flex justify-between pt-[2%] ">
+                    <img class="flex w-[40%] md:w-[25%] xl:w-[18%] md:h-[90%] 2xl:w-[20%] 2xl:h-[130%]   px-[10px] object-cover" src="img/chip.png" alt="">
+                    <img class="flex w-[40%] md:w-[25%] lg:w-[25%] md:h-[90%] 2xl:w-[20%] 2xl:h-[130%]   " src="img/visa.png" alt="">
+                  </div>  
+                  <div class="h-[80%] w-full *:text-white font-extrabold py-[5%]  lg:py-[6%] 2xl:py-0">
+                    <!-- card num -->
+                  
+                  <h1 class="w-full text-[20px]  xl:text-[40px] flex justify-center items-center">####-####-####-####</h1>
+                  <!-- card name -->
+                  
+                  <h2 class="w-full text-[16px] xl:text-[30px] ml-[20px]">Name</h2>
+                  
+                
+                  
+                 <div class="row ml-[20px]">
+                    <!-- month year  -->
+                    
+                    <h3 class="h-full w-[8%] text-[14px]  xl:text-[20px]">mm</h3>
+                 
+                    <h4 class="h-full w-[20%] text-[14px]  xl:text-[20px]">/ yy</h4>
+                    <!-- ccv -->
+                   
+                    <h5 class="h-full w-[40%] flex justify-end items-center text-[14px] xl:text-[20px] ml-[20px]">ccv</h5>
+                 </div>
+                   
+                  </div>
+                </div>
+                <!-- card form -->
+                <div class="w-[80%] h-[80%]   translate-y-[-22%] ">
+                    <p class="text-[12px]">Card Number</p>
+                    <div class="ro w-full text-[15px] lg:text-[20px] h-[20%] ">
+                        <input type="text" class="hover:border-[#2364d2]" placeholder="0000">
+                        <input type="text" class="hover:border-[#2364d2]" placeholder="0000">
+                        <input type="text" class="hover:border-[#2364d2]" placeholder="0000">
+                        <input type="text" class="hover:border-[#2364d2]" placeholder="0000">
+                    </div>
+                    <div class="w-[] h-[20%]  ">
+                        <p class="text-[12px]">Card Holder Name</p>
+                        <input type="text" id="name" class="hover:border-[#2364d2] border-2 border-gray-500 " placeholder="  John Doe :limit to 20 characters">
+                    </div>
+                    <div class="w-full h-[20%]  littles">
+                     
+                        <div class="h-[20%] flex flex-wrap *:text-[12px]">
+                            <p class="flex w-[50%] h-full">Experation Date</p>
+                            <p class="flex w-[50%] h-full justify-center">CCV</p>
+                        </div>
+                        <div class="h-[80%] w-full">
+                            <input type="text" id="month" class=" hover:border-[#2364d2] border-2 border-gray-500" placeholder="  month ex:12">
+                        <input type="text" id="year" pl class=" hover:border-[#2364d2] border-2 border-gray-500" placeholder="  year ex:25">
+                        
+                        <input type="text" id="ccv"  class=" hover:border-[#2364d2] border-2 border-gray-500" placeholder="  ccv ex:1111">
+                        </div>
+                    </div>
+                    
+                   
+                   <div class="row h-[20%]  ">
+                     <button class="w-full h-[60px] bg-[#2364d2] rounded-lg text-white text-center text-[18px] font-extrabold" id="btn">submit</button>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="w-full h-[200px] bg mx-auto">
+        <!-- my signature -->
+            <figure class=" group w-[130px] h-[130px] flex flex-wrap fixed z-10 left-[10px] bottom-[40px] rounded-full cursor-pointer ">
+                <img class="bg-[#d4ade0] relative z-10 w-full h-full object-cover rounded-full *:text-white" src="img/me.png" alt="">
+                <section class="group-hover:right-[-41px] group-hover:opacity-100 group-hover:visible w-[40px] h-[90px] absolute top-0 right-[70px] opacity-0 invisible duration-[.4s] ease-linear hover:right-[-45px] hover:opacity-100 hover:visible">
+                    <a class="flex items-center justify-center w-full h-[40px] rounded-full bg-[#d4ade0] text-white flex-[18px] mb-[5px] duration-[.3s] ease-linear relative hover:bg-pink hover:text-black" href="https://github.com/SabaAsgarian" target="_blank"><i class="icon-github-circled-1"></i></a>
+                    <a class="flex items-center justify-center w-full h-[40px] rounded-full bg-[#d4ade0] text-white flex-[18px] mb-[5px] duration-[.3s] ease-linear relative hover:bg-pink hover:text-black" href="https://www.linkedin.com/in/saba-asgarian-69161088?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank"><i class=" icon-linkedin-3 "></i></a>
+                    <a class="flex items-center justify-center w-full h-[40px] rounded-full bg-[#d4ade0] text-white flex-[18px] mb-[5px] duration-[.3s] ease-linear relative hover:bg-pink hover:text-black" href="https://www.instagram.com/saba_asgarian_web?igsh=M2Z2dTU3cHFmeW1o&utm_source=qr" target="_blank"><i class=" icon-instagram-1"></i></a>
+                    <a class="flex items-center justify-center w-full h-[40px] rounded-full bg-[#d4ade0] text-white flex-[18px] mb-[5px] duration-[.3s] ease-linear relative hover:bg-pink hover:text-black" href="mailto:computer.sabaa@gmail.com" target="_blank"><i class="icon-mail"></i></a>
+                                            
+                </section>
+            </figure>
+            <!-- my signature -->
+            <section class="w-full h-full border-t-purple-200 border-t-[1px] *:text-white flex justify-center   py-[50px] flex-wrap *:text-center">
+                <p class="w-full h-1/2 flex justify-center items-center text-center">Developed By &nbsp; <a class="hover:text-[#d4ade0]" href="https://github.com/SabaAsgarian" target="_blank"> Saba Asgarian </a> &nbsp; with Tailwind & JavaScript</p>
+                <ul class="w-full h-1/2 ps-[20px] flex flex-wrap  *:text-[#fef6e6] text-[15px] lg:text-[24px] *:text-[15px] *:lg:text-[30px]   justify-center items-center *:mx-[8px]">
+                    <li><a class="flex py-[4px] px-[4px]  hover:bg-[#d4ade0] justify-center items-center bg-[#45455f]" href="https://github.com/SabaAsgarian" target="_blank"><i class="icon-github-circled-1 "></i></a></li>
+                    <li><a class="flex py-[4px] px-[4px]  hover:bg-[#d4ade0] justify-center items-center bg-[#45455f]" href="https://www.linkedin.com/in/saba-asgarian-69161088?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank"><i class=" icon-linkedin-3"></i></a></li>
+                    <li><a class="flex py-[4px] px-[4px]  hover:bg-[#d4ade0] justify-center items-center bg-[#45455f]" href="https://www.instagram.com/saba_asgarian_web?igsh=M2Z2dTU3cHFmeW1o&utm_source=qr" target="_blank"><i class=" icon-instagram-1"></i></a></li>
+                    <li> <a class="flex py-[4px] px-[4px]  hover:bg-[#d4ade0] justify-center items-center bg-[#45455f]" href="mailto:computer.sabaa@gmail.com"><i class="icon-mail"></i></a></li>
+                </ul>
+            </section>
+            <span class="relative">
+                <a class="hover:bg-[#d4ade0] fixed right-[2%] bottom-[5%] bg-[#333333cc] flex h-[50px] w-[40px] justify-center items-center text-white text-[18px] " href="#"><i class="icon-up-open-2"></i></a>
+            </span>
+    </footer>
+   
+</body>
+<script>
+     const h1 = document.querySelector('h1')
+     const h2 = document.querySelector('h2')
+     const h3 = document.querySelector('h3')
+     const h4 = document.querySelector('h4')
+     const h5 = document.querySelector('h5')
+     const name=  document.getElementById('name')
+     const ccv=  document.getElementById('ccv')
+     const year=  document.getElementById('year')
+     const month=  document.getElementById('month')
+     const btn=  document.getElementById('btn')
+     const inp = document.querySelectorAll('.ro>input')
+     inp.forEach((value, index) => {
+        value.addEventListener('keyup', (event) => {
+            // backspace code 8 check
+            if (event.keyCode == 8 && value.value.length == 0) {
+                if(index != 0){
+                    value.previousElementSibling.focus()
+                }
+            } else {
+                // input check
+                if (value.value.length >= 4) {
+                    if (index != 3) {
+                        value.nextElementSibling.focus()
+                    } else {
+                        name.focus()
+                    }
+                    value.value = value.value.slice(0, 4)
+                }
+            }
+            // backspace code 8 check
+
+
+
+
+
+
+            // end input length
+            h1.innerHTML = ''
+            inp.forEach((value, index) => {
+                let temp = value.value
+                if (index == 3) {
+                    h1.innerHTML += temp
+                } else {
+                    h1.innerHTML += temp.length == 4 ? temp + ' - ' : temp
+                }
+            })
+            // end h1 write
+        })
+    })
+   
+    name.addEventListener('input', (event) => {
+    if (event.target.value.length >= 20) {
+        event.target.value = event.target.value.slice(0, 20); // limit to 20 characters
+        month.focus(); // move focus to the next element
+    }
+    h2.innerHTML = event.target.value;
+})
+    month.addEventListener('input', (event) => {
+    if (event.target.value.length >= 2) {
+        event.target.value = event.target.value.slice(0, 2); // limit to 2 characters
+        year.focus(); // move focus to the next element
+    }
+    h3.innerHTML = event.target.value;
+})
+    year.addEventListener('input', (event) => {
+    if (event.target.value.length >= 2) {
+        event.target.value = event.target.value.slice(0, 2); // limit to 2 characters
+        ccv.focus(); // move focus to the next element
+    }
+    h4.innerHTML = '/ '  +  event.target.value;
+})
+    ccv.addEventListener('input', (event) => {
+    if (event.target.value.length >= 4) {
+        event.target.value = event.target.value.slice(0, 4); // limit to 4 characters
+        btn.focus();// move focus to the next element
+    }
+    h5.innerHTML = event.target.value;
+})
+btn.addEventListener('click',()=>{
+    
+    alert('Your Card Information Has Been Added To Our DataBase Thanks!!!')
+})
+   
+   
+</script>
+</html>
+<!-- npx tailwindcss -i ./src/css/master.css -o ./src/css/output.css --watch -->
