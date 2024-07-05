@@ -1,0 +1,36 @@
+.ro{
+    display: flex;
+    width: 90%;
+    >input{
+        width: 35%;
+        height: 50%;
+        border: 2px solid rgb(178, 178, 178);
+       border-radius: 5px;
+       margin-left: 5%;
+    
+    }
+}
+#name{
+    width: 100%;
+    height: 50%;
+    border: 2px solid rgb(178, 178, 178);
+    border-radius: 5px;
+    &:hover{
+        border: 2px solid #2364d2;
+    }
+}
+#ccv,#month,#year{
+      height: 50%;
+      width: 28%;
+        border: 2px solid rgb(178, 178, 178);
+    border-radius:5px;  
+    margin-left: 3%;
+    &:hover{
+        border: 2px solid #2364d2;
+    }
+    
+    
+
+}
+
+

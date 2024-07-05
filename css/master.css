@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+    font-family: ss;
+    src: url(../font/SourceSans3-Regular.ttf);
+}
+body{
+    font-family: ss,sans-serif;
+    font-family: ss;
+}
+.bg{
+    
+    background: linear-gradient(50deg, #a8c4dc, rgb(135, 171, 171),#ad8eb6);
+}
+.bg2{
+    background: linear-gradient(50deg, #dbecfb, rgb(172, 219, 219),#d4ade0);
+}
+.row{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
